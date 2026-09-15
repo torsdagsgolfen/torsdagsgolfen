@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Torsdagsgolfen 2027</title>
+    <meta
+      name="description"
+      content="En statisk golfsida för schema, regler, resultat, vinnare och medlemmar."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav" aria-label="Huvudnavigering">
+        <div class="nav-links">
+          <a href="#schedule">Schema</a>
+          <a href="#rules">Regler</a>
+          <a href="#results">Resultat</a>
+          <a href="#winners">Vinnare</a>
+          <a href="#members">Medlemmar</a>
+        </div>
+      </nav>
+
+      <section class="hero-content" id="top">
+        <p class="eyebrow">Säsong 2027</p>
+        <h1>Torsdagsgolfen</h1>
+        <p class="hero-copy">
+          Golf, öl och bogeys.
+        </p>
+      </section>
+    </header>
+
+    <main>
+      <section class="section intro-card" aria-label="Snabb information">
+        <article>
+          <span class="stat">10</span>
+          <p>schemalagda rundor</p>
+        </article>
+        <article>
+          <span class="stat">4</span>
+          <p>räknade resultat</p>
+        </article>
+        <article>
+          <span class="stat">6</span>
+          <p>medlemmar</p>
+        </article>
+      </section>
+
+      <section class="section tabs-section" id="match-info">
+        <div class="tabs-header">
+          <div>
+            <p class="eyebrow">Tävlingshubben</p>
+            <h2>Allt för säsongen</h2>
+          </div>
+          <div class="tabs" role="tablist" aria-label="Golfens informationsflikar">
+            <a class="tab-link is-active" id="schedule-tab" href="#schedule" role="tab" aria-selected="true">Schema</a>
+            <a class="tab-link" id="rules-tab" href="#rules" role="tab" aria-selected="false">Regler</a>
+            <a class="tab-link" id="results-tab" href="#results" role="tab" aria-selected="false">Resultat</a>
+            <a class="tab-link" id="winners-tab" href="#winners" role="tab" aria-selected="false">Vinnare</a>
+            <a class="tab-link" id="members-tab" href="#members" role="tab" aria-selected="false">Medlemmar</a>
+          </div>
+        </div>
+
+        <section class="tab-panel split is-active" id="schedule" role="tabpanel" aria-labelledby="schedule-tab">
+          <div>
+            <p class="eyebrow">Kommande rundor</p>
+            <h2>Schema</h2>
+            <p>
+              Schemat är uppdelat vecka för vecka. V.18 är en uppvärmningsrunda
+              utanför tävlingen. Därefter spelas 10 tävlingsrundor: tre
+              poängbogey, tre scramble, tre eclectic-rundor och en avslutande
+              matchspelsfinal.
+            </p>
+            <p>
+              Din bästa poängbogey, din bästa scramble, ditt eclectic-resultat
+              och finalens matchspel räknas ihop. Högst totalpoäng vinner.
+            </p>
+          </div>
+
+          <div class="table-card">
+            <table>
+              <thead>
+                <tr>
+                  <th>Vecka</th>
+                  <th>Bana</th>
+                  <th>Format</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>V.18</td>
+                  <td>Brollsta Lilla</td>
+                  <td>Ölgolf (Ej med i tävling)</td>
+                </tr>
+                <tr>
+                  <td>V.19</td>
+                  <td>Lindö Äng</td>
+                  <td>Poängbogey</td>
+                </tr>
+                <tr>
+                  <td>V.20</td>
+                  <td>Kyssinge</td>
+                  <td>Scramble</td>
+                </tr>
+                <tr>
+                  <td>V.21</td>
+                  <td>Lindö</td>
+                  <td>Eclectic</td>
+                </tr>
+                <tr>
+                  <td>V.22</td>
+                  <td>Vaxholm</td>
+                  <td>Poängbogey</td>
+                </tr>
+                <tr>
+                  <td>V.23</td>
+                  <td>Kings</td>
+                  <td>Scramble</td>
+                </tr>
+                <tr>
+                  <td>V.24</td>
+                  <td>Lindö</td>
+                  <td>Eclectic</td>
+                </tr>
+                <tr>
+                  <td>V.25</td>
+                  <td>Brollsta</td>
+                  <td>Poängbogey</td>
+                </tr>
+                <tr>
+                  <td>V.26</td>
+                  <td>International</td>
+                  <td>Scramble</td>
+                </tr>
+                <tr>
+                  <td>V.27</td>
+                  <td>Lindö Dal</td>
+                  <td>Eclectic</td>
+                </tr>
+                <tr>
+                  <td>V.29</td>
+                  <td>Final</td>
+                  <td>Matchspel</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="tab-panel rules-grid" id="rules" role="tabpanel" aria-labelledby="rules-tab" hidden>
+          <div class="section-heading">
+            <p class="eyebrow">Regler och format</p>
+            <h2>Regler</h2>
+            <p>Regler för Torsdagsgolfen 2027.</p>
+          </div>
+
+          <article class="rule-card">
+            <h3>Markör</h3>
+            <p>
+              Du behöver ha med dig en markör från Torsdagsgolfen när du spelar
+              en matchspelsrunda.
+            </p>
+          </article>
+          <article class="rule-card">
+            <h3>Mulligans</h3>
+            <p>Inga mulligans är tillåtna. Varje slag räknas.</p>
+          </article>
+          <article class="rule-card">
+            <h3>Osäker boll från tee</h3>
+            <p>
+              Från tee ska du alltid spela en provisorisk boll om du är osäker
+              på var din första boll hamnade.
+            </p>
+          </article>
+          <article class="rule-card">
+            <h3>Magiskt försvunnen boll</h3>
+            <p>
+              Om en boll magiskt försvinner får du droppa som om den låg i ett
+              rött pliktområde. Detta ska bara användas i undantagsfall.
+            </p>
+          </article>
+        </section>
+
+        <section class="tab-panel" id="results" role="tabpanel" aria-labelledby="results-tab" hidden>
+          <div class="section-heading wide-heading">
+            <p class="eyebrow">Resultattavla</p>
+            <h2>Resultat</h2>
+            <p>
+              Här kommer resultatet att synas efter varje spelad runda. Man
+              delar sitt resultat via Facebook i vanlig ordning och resultatet
+              uppdateras sedan här.
+            </p>
+          </div>
+
+          <div class="table-card score-card">
+            <table class="score-table" data-score-table>
+              <thead>
+                <tr>
+                  <th rowspan="2">Spelare</th>
+                  <th colspan="3">Poängbogey</th>
+                  <th class="group-start" colspan="3">Scramble</th>
+                  <th class="group-start" colspan="3">Eclectic</th>
+                  <th class="group-start" rowspan="2">Final</th>
+                  <th class="group-start" rowspan="2">Total</th>
+                </tr>
+                <tr>
+                  <th>V.19</th>
+                  <th>V.22</th>
+                  <th>V.25</th>
+                  <th class="group-start">V.20</th>
+                  <th>V.23</th>
+                  <th>V.26</th>
+                  <th class="group-start">V.21</th>
+                  <th>V.24</th>
+                  <th>V.27</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Exemple</th>
+                  <td data-group="points" data-round="V.19" data-course="Lindö Äng">31</td>
+                  <td data-group="points" data-round="V.22" data-course="Vaxholm">36</td>
+                  <td data-group="points" data-round="V.25" data-course="Brollsta">34</td>
+                  <td data-group="scramble" data-round="V.20" data-course="Kyssinge">28</td>
+                  <td data-group="scramble" data-round="V.23" data-course="Kings">32</td>
+                  <td data-group="scramble" data-round="V.26" data-course="International">30</td>
+                  <td data-group="eclectic" data-round="V.21" data-course="Lindö">30</td>
+                  <td data-group="eclectic" data-round="V.24" data-course="Lindö">33</td>
+                  <td data-group="eclectic" data-round="V.27" data-course="Lindö Dal">35</td>
+                  <td data-group="final" data-round="V.29" data-course="Final">12</td>
+                  <td data-total></td>
+                </tr>
+                <tr>
+                  <th scope="row">Felix</th>
+                  <td data-group="points" data-round="V.19" data-course="Lindö Äng"></td>
+                  <td data-group="points" data-round="V.22" data-course="Vaxholm"></td>
+                  <td data-group="points" data-round="V.25" data-course="Brollsta"></td>
+                  <td data-group="scramble" data-round="V.20" data-course="Kyssinge"></td>
+                  <td data-group="scramble" data-round="V.23" data-course="Kings"></td>
+                  <td data-group="scramble" data-round="V.26" data-course="International"></td>
+                  <td data-group="eclectic" data-round="V.21" data-course="Lindö"></td>
+                  <td data-group="eclectic" data-round="V.24" data-course="Lindö"></td>
+                  <td data-group="eclectic" data-round="V.27" data-course="Lindö Dal"></td>
+                  <td data-group="final" data-round="V.29" data-course="Final"></td>
+                  <td data-total></td>
+                </tr>
+                <tr>
+                  <th scope="row">Micke</th>
+                  <td
+                    data-group="points"
+                    data-round="V.19"
+                    data-course="Lindö Äng"
+                    data-handicap="11,7,9,1,13,3,5,17,15,2,6,18,12,16,8,4,10,14"
+                    data-pars="4,5,3,4,5,3,4,4,4,4,4,3,4,5,5,4,3,4"
+                    data-strokes="5,6,3,4,5,4,5,4,3,5,4,4,5,6,6,5,4,5"
+                    data-net="5,5,3,3,5,3,4,4,3,4,3,4,5,6,5,4,4,5"
+                  >33</td>
+                  <td data-group="points" data-round="V.22" data-course="Vaxholm"></td>
+                  <td data-group="points" data-round="V.25" data-course="Brollsta"></td>
+                  <td data-group="scramble" data-round="V.20" data-course="Kyssinge"></td>
+                  <td data-group="scramble" data-round="V.23" data-course="Kings"></td>
+                  <td data-group="scramble" data-round="V.26" data-course="International"></td>
+                  <td data-group="eclectic" data-round="V.21" data-course="Lindö"></td>
+                  <td data-group="eclectic" data-round="V.24" data-course="Lindö"></td>
+                  <td data-group="eclectic" data-round="V.27" data-course="Lindö Dal"></td>
+                  <td data-group="final" data-round="V.29" data-course="Final"></td>
+                  <td data-total></td>
+                </tr>
+                <tr>
+                  <th scope="row">Robban</th>
+                  <td data-group="points" data-round="V.19" data-course="Lindö Äng"></td>
+                  <td data-group="points" data-round="V.22" data-course="Vaxholm"></td>
+                  <td data-group="points" data-round="V.25" data-course="Brollsta"></td>
+                  <td data-group="scramble" data-round="V.20" data-course="Kyssinge"></td>
+                  <td data-group="scramble" data-round="V.23" data-course="Kings"></td>
+                  <td data-group="scramble" data-round="V.26" data-course="International"></td>
+                  <td data-group="eclectic" data-round="V.21" data-course="Lindö"></td>
+                  <td data-group="eclectic" data-round="V.24" data-course="Lindö"></td>
+                  <td data-group="eclectic" data-round="V.27" data-course="Lindö Dal"></td>
+                  <td data-group="final" data-round="V.29" data-course="Final"></td>
+                  <td data-total></td>
+                </tr>
+                <tr>
+                  <th scope="row">Niggy</th>
+                  <td data-group="points" data-round="V.19" data-course="Lindö Äng"></td>
+                  <td data-group="points" data-round="V.22" data-course="Vaxholm"></td>
+                  <td data-group="points" data-round="V.25" data-course="Brollsta"></td>
+                  <td data-group="scramble" data-round="V.20" data-course="Kyssinge"></td>
+                  <td data-group="scramble" data-round="V.23" data-course="Kings"></td>
+                  <td data-group="scramble" data-round="V.26" data-course="International"></td>
+                  <td data-group="eclectic" data-round="V.21" data-course="Lindö"></td>
+                  <td data-group="eclectic" data-round="V.24" data-course="Lindö"></td>
+                  <td data-group="eclectic" data-round="V.27" data-course="Lindö Dal"></td>
+                  <td data-group="final" data-round="V.29" data-course="Final"></td>
+                  <td data-total></td>
+                </tr>
+                <tr>
+                  <th scope="row">Pontus</th>
+                  <td
+                    data-group="points"
+                    data-round="V.19"
+                    data-course="Lindö Äng"
+                    data-image="scorecards/pontus-v19.svg"
+                    data-handicap="11,7,9,1,13,3,5,17,15,2,6,18,12,16,8,4,10,14"
+                    data-pars="4,5,3,4,5,3,4,4,4,4,4,3,4,5,5,4,3,4"
+                    data-strokes="5,6,3,4,5,4,5,4,3,5,4,4,5,6,6,5,4,5"
+                    data-net="5,5,3,3,5,3,4,4,3,4,3,4,5,6,5,4,4,5"
+                  >33</td>
+                  <td data-group="points" data-round="V.22" data-course="Vaxholm"></td>
+                  <td data-group="points" data-round="V.25" data-course="Brollsta"></td>
+                  <td data-group="scramble" data-round="V.20" data-course="Kyssinge"></td>
+                  <td data-group="scramble" data-round="V.23" data-course="Kings"></td>
+                  <td data-group="scramble" data-round="V.26" data-course="International"></td>
+                  <td data-group="eclectic" data-round="V.21" data-course="Lindö"></td>
+                  <td data-group="eclectic" data-round="V.24" data-course="Lindö"></td>
+                  <td data-group="eclectic" data-round="V.27" data-course="Lindö Dal"></td>
+                  <td data-group="final" data-round="V.29" data-course="Final"></td>
+                  <td data-total></td>
+                </tr>
+                <tr>
+                  <th scope="row">Ollas</th>
+                  <td data-group="points" data-round="V.19" data-course="Lindö Äng"></td>
+                  <td data-group="points" data-round="V.22" data-course="Vaxholm"></td>
+                  <td data-group="points" data-round="V.25" data-course="Brollsta"></td>
+                  <td data-group="scramble" data-round="V.20" data-course="Kyssinge"></td>
+                  <td data-group="scramble" data-round="V.23" data-course="Kings"></td>
+                  <td data-group="scramble" data-round="V.26" data-course="International"></td>
+                  <td data-group="eclectic" data-round="V.21" data-course="Lindö"></td>
+                  <td data-group="eclectic" data-round="V.24" data-course="Lindö"></td>
+                  <td data-group="eclectic" data-round="V.27" data-course="Lindö Dal"></td>
+                  <td data-group="final" data-round="V.29" data-course="Final"></td>
+                  <td data-total></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="score-note">
+            Markerade celler räknas in i totalen. Klicka på en poäng i tabellen
+            för att öppna scorekortet för just den rundan.
+          </p>
+          <p class="score-note">
+            Scorekortets hålscore är exempeldata baserad på rundans totalpoäng
+            tills riktiga hålresultat fylls i.
+          </p>
+
+          <div class="scorecard-panel" data-scorecard hidden>
+            <div class="scorecard-header">
+              <div>
+                <p class="eyebrow">Scorekort</p>
+                <h3 data-scorecard-player></h3>
+              </div>
+              <button class="scorecard-close" type="button" data-scorecard-close>Stäng</button>
+            </div>
+            <p class="scorecard-meta" data-scorecard-meta></p>
+            <div class="scorecard-image-wrap" data-scorecard-image-wrap hidden>
+              <img class="scorecard-image" data-scorecard-image alt="Inskickat scorekort">
+            </div>
+            <div class="scorecard-table-wrap">
+              <table class="scorecard-table" data-scorecard-table></table>
+            </div>
+            <div class="scorecard-legend" aria-label="Scorekortets färger">
+              <span><i class="legend-dot eagle"></i>Eagle eller bättre</span>
+              <span><i class="legend-dot birdie"></i>Birdie</span>
+              <span><i class="legend-dot par"></i>Par</span>
+              <span><i class="legend-dot bogey"></i>Bogey</span>
+              <span><i class="legend-dot double"></i>Dubbelbogey+</span>
+            </div>
+            <div class="scorecard-total">
+              <span>Rundans poäng</span>
+              <strong data-scorecard-total></strong>
+            </div>
+          </div>
+        </section>
+
+        <section class="tab-panel" id="winners" role="tabpanel" aria-labelledby="winners-tab" hidden>
+          <div class="section-heading">
+            <p class="eyebrow">Mästargalleriet</p>
+            <h2>Tidigare vinnare</h2>
+            <p>Här samlas tidigare mästare.</p>
+          </div>
+
+          <div class="results-list compact-list">
+            <article class="result-card winner">
+              <div>
+                <p class="date">Vinnare 2026</p>
+                <h3>Pontus</h3>
+              </div>
+              <span>Mästare</span>
+            </article>
+            <article class="result-card">
+              <div>
+                <p class="date">Vinnare 2025</p>
+                <h3>Rober</h3>
+              </div>
+              <span>Mästare</span>
+            </article>
+          </div>
+        </section>
+
+        <section class="tab-panel" id="members" role="tabpanel" aria-labelledby="members-tab" hidden>
+          <div class="section-heading">
+            <p class="eyebrow">Startfältet</p>
+            <h2>Medlemmar</h2>
+            <p>Spelare som är med under säsongen.</p>
+          </div>
+
+          <div class="members-grid">
+            <article class="member-card">Felix</article>
+            <article class="member-card">Micke</article>
+            <article class="member-card">Robban</article>
+            <article class="member-card">Niggy</article>
+            <article class="member-card">Pontus</article>
+            <article class="member-card">Ollas</article>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Torsdagsgolfen</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
